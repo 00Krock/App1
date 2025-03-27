@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入身高 (米)"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入体重 (千克)"
+        android:layout_below="@id/heightInput"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算BMI"
+        android:layout_below="@id/weightInput"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI结果将显示在这里"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/adviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康建议将显示在这里"
+        android:layout_below="@id/resultText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
