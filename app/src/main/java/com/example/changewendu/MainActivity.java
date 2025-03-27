@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private void calculateBMI() {
         String heightStr = heightInput.getText().toString();
         String weightStr = weightInput.getText().toString();
-
+        //这里添加一行说明
         if (!heightStr.isEmpty() && !weightStr.isEmpty()) {
             float height = Float.parseFloat(heightStr);
             float weight = Float.parseFloat(weightStr);
